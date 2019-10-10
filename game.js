@@ -1,7 +1,7 @@
 /* eslint-disable complexity */
 var gameOfLife = {
-  width: 20,
-  height: 20, // width and height dimensions of the board
+  width: 30,
+  height: 30, // width and height dimensions of the board
   stepInterval: null, // should be used to hold reference to an interval that is "playing" the game
   virtualTable: {}, // keeps the virtual state for the next step
 
@@ -177,7 +177,7 @@ var gameOfLife = {
     // automatically repeatedly every fixed time interval
     gameOfLife.stepInterval = setInterval(() => {
       gameOfLife.step();
-    }, 500);
+    }, 400);
   },
 };
 
